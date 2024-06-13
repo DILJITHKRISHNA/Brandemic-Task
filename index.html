@@ -108,6 +108,32 @@
         .font-dm-sans {
             font-family: 'DM Sans', sans-serif;
         }
+
+        .scroll-container {
+            overflow: hidden;
+            width: 100%;
+        }
+
+        .scroll-content {
+            display: flex;
+            animation: scroll 30s linear infinite;
+            gap: 1rem;
+            /* Adjust spacing between images */
+        }
+
+        .scroll-content:hover {
+            animation-play-state: paused;
+        }
+
+        @keyframes scroll {
+            0% {
+                transform: translateX(0);
+            }
+
+            100% {
+                transform: translateX(-100%);
+            }
+        }
     </style>
 </head>
 
@@ -133,7 +159,8 @@
             <img src="./assets/Group.png" alt="Group" class="absolute bottom-0 right-0 w-1/4 opacity-30">
             <img src="./assets/man.png" alt="chairman"
                 class="absolute z-50 sm:w-[15rem] sm:h-[19rem] w-[7rem] h-[8rem] left-[4%] sm:left-[18%] top-[21rem] sm:top-[7rem] rounded-2xl">
-            <div class="absolute z-40 text-left ml-20 bg-[#464BCD] px-[15rem] sm:mt-10 mt-[12rem] p-6 rounded-2xl">
+            <div
+                class="absolute z-40 text-left ml-20 bg-[#464BCD] px-[15rem] sm:mt-10 mt-[12rem] p-6 rounded-2xl sm:w-[55rem] w-auto">
                 <p class="font-semibold text-black text-lg font-dm-sans">Company Chairman Moti Sagar on his father Late
                     Shri Ramanand
                     Sagar.
@@ -162,13 +189,15 @@
             143 billion minutes of watch time (2020 - over 77 million views), accounting for 83% of overall Hindi
             viewership across India, South East Asia and the Middle East.
         </p>
-        <div class="flex justify-around items-center flex-wrap">
-            <img src="./assets/hotstar.png" alt="Disney+ Hotstar" class="w-24">
-            <img src="./assets/Tseries.png" alt="T-Series" class="w-24">
-            <img src="./assets/sonyLiv.png" alt="Sony Liv" class="w-24">
-            <img src="./assets/youtube.png" alt="YouTube" class="w-24">
-            <img src="./assets/prime.png" alt="Prime Video" class="w-24">
-            <img src="./assets/netflix.png" alt="Netflix" class="w-24">
+        <div class="scroll-container">
+            <div class="scroll-content flex justify-around items-center flex-wrap">
+                <img src="./assets/hotstar.png" alt="Disney+ Hotstar" class="w-28">
+                <img src="./assets/Tseries.png" alt="T-Series" class="w-28">
+                <img src="./assets/sonyLiv.png" alt="Sony Liv" class="w-28">
+                <img src="./assets/youtube.png" alt="YouTube" class="w-28">
+                <img src="./assets/prime.png" alt="Prime Video" class="w-28">
+                <img src="./assets/netflix.png" alt="Netflix" class="w-28">
+            </div>
         </div>
     </div>
     <!-- //////////// -->
