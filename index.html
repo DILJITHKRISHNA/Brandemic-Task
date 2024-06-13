@@ -4,8 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./src/output.css">
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
+
+
         .legacy-card {
             background-color: rgba(255, 255, 255, 0.1);
             border-radius: 0.5rem;
@@ -100,29 +104,49 @@
         button:hover .button-text {
             color: #fff;
         }
-        
+
+        .font-dm-sans {
+            font-family: 'DM Sans', sans-serif;
+        }
     </style>
 </head>
 
 <body>
-    <div class="relative text-center bg-[#010621] mb-30  text-white ">
-        <h1 class="text-6xl font-bold text-left px-10 py-10 font-sans">A Brand With<br> Legacy</h1>
+    <!-- home page -->
+    <div class="relative text-center bg-[#010621] mb-30  text-white flex flex-col">
+        <div class="flex flex-row">
+            <h1 class="text-6xl font-bold text-left px-10 py-10 font-dm-sans animate-pulse">A Brand With<br> Legacy</h1>
+            <div class="backdrop-blur-md bg-gray-700/50 w-[40rem] h-8 mt-12 rounded-full items-center">
+                <header class="w-full">
+                    <nav>
+                        <ul
+                            class="flex sm:flex-row flex-col justify-center gap-10 md:gap-20 font-semibold text-white font-dm-sans">
+                            <li><a href="index.html" class="hover:underline">Home</a></li>
+                            <li><a href="about.html" class="hover:underline">About</a></li>
+                            <li><a href="service.html" class="hover:underline">Service</a></li>
+                        </ul>
+                    </nav>
+                </header>
+            </div>
+        </div>
         <div class="flex justify-center items-center mt-[10rem]">
             <img src="./assets/Group.png" alt="Group" class="absolute bottom-0 right-0 w-1/4 opacity-30">
             <img src="./assets/man.png" alt="chairman"
-                class="absolute z-50 w-[15rem] h-[19rem] left-[18%] top-[7rem] rounded-2xl">
-            <div class="absolute z-40 text-left ml-20 bg-[#464BCD] px-[15rem] p-6 rounded-2xl max-w-[55rem]">
-                <p class="font-semibold text-black text-lg">Company Chairman Moti Sagar on his father Late Shri Ramanand
+                class="absolute z-50 sm:w-[15rem] sm:h-[19rem] w-[4rem] h-[6rem] sm:mt-[10rem] left-[18%] top-[7rem] rounded-2xl">
+            <div class="absolute z-40 text-left ml-20 bg-[#464BCD] px-[15rem] sm:mt-10 p-6 rounded-2xl max-w-[55rem]">
+                <p class="font-semibold text-black text-lg font-dm-sans">Company Chairman Moti Sagar on his father Late
+                    Shri Ramanand
                     Sagar.
                 </p>
-                <p class="mt-2 text-lg">Sagar Picture's visionary legacy accredits itself to Mr. Ramanand Sagar,
+                <p class="mt-2 text-lg font-dm-sans">Sagar Picture's visionary legacy accredits itself to Mr. Ramanand
+                    Sagar,
                     Classical Author, Writer, Film-maker, Producer, and Founder of Sagar Art Enterprises, one of India's
                     earliest Motion Picture Company.</p>
                 <button class="learn-more mt-2">
                     <span class="circle" aria-hidden="true">
                         <span class="icon arrow"></span>
                     </span>
-                    <span class="button-text">Read Legacy</span>
+                    <span class="button-text font-dm-sans">Read Legacy</span>
                 </button>
             </div>
         </div>
@@ -130,10 +154,9 @@
     <div class="bg-[#010621] w-[28rem] h-[22rem]">
         <img src="./assets/Group.png" alt="Group" class="object-cover opacity-30">
     </div>
-
     <div class="bg-white py-16 px-4">
-        <h2 class="text-3xl font-bold text-center text-[#030D42] mb-6">Now Playing On</h2>
-        <p class="text-center max-w-screen-md mx-auto mb-10 text-[#030D42]">
+        <h2 class="text-3xl font-bold text-center text-[#030D42] mb-6 font-dm-sans">Now Playing On</h2>
+        <p class="text-center max-w-screen-md mx-auto mb-10 text-[#030D42] font-dm-sans">
             Sagar Pictures Entertainment is the founder of one of Modern India's most successful content cycles,
             generating an ecosystem of record-breaking programming trends, credited with series that have clocked over
             143 billion minutes of watch time (2020 - over 77 million views), accounting for 83% of overall Hindi
@@ -148,7 +171,7 @@
             <img src="./assets/netflix.png" alt="Netflix" class="w-24">
         </div>
     </div>
-
+    <!-- //////////// -->
 </body>
 
 </html>
