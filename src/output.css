@@ -667,16 +667,16 @@ video {
   inset-inline-end: 0.25rem;
 }
 
-.left-\[18\%\] {
-  left: 18%;
+.left-\[4\%\] {
+  left: 4%;
 }
 
 .right-0 {
   right: 0px;
 }
 
-.top-\[7rem\] {
-  top: 7rem;
+.top-\[21rem\] {
+  top: 21rem;
 }
 
 .isolate {
@@ -748,6 +748,10 @@ video {
   margin-bottom: 2.5rem;
 }
 
+.mb-4 {
+  margin-bottom: 1rem;
+}
+
 .mb-5 {
   margin-bottom: 1.25rem;
 }
@@ -780,24 +784,8 @@ video {
   margin-top: 10rem;
 }
 
-.mb-2 {
-  margin-bottom: 0.5rem;
-}
-
-.mb-4 {
-  margin-bottom: 1rem;
-}
-
-.mt-10 {
-  margin-top: 2.5rem;
-}
-
-.mt-\[8rem\] {
-  margin-top: 8rem;
-}
-
-.mt-\[10re\] {
-  margin-top: 10re;
+.mt-\[12rem\] {
+  margin-top: 12rem;
 }
 
 .box-border {
@@ -903,12 +891,12 @@ video {
   height: 2rem;
 }
 
-.h-\[19rem\] {
-  height: 19rem;
-}
-
 .h-\[22rem\] {
   height: 22rem;
+}
+
+.h-\[8rem\] {
+  height: 8rem;
 }
 
 .h-full {
@@ -919,10 +907,6 @@ video {
   height: 100vh;
 }
 
-.h-\[6rem\] {
-  height: 6rem;
-}
-
 .w-1\/4 {
   width: 25%;
 }
@@ -931,16 +915,16 @@ video {
   width: 6rem;
 }
 
-.w-\[15rem\] {
-  width: 15rem;
-}
-
 .w-\[28rem\] {
   width: 28rem;
 }
 
 .w-\[40rem\] {
   width: 40rem;
+}
+
+.w-\[7rem\] {
+  width: 7rem;
 }
 
 .w-\[this-is\\\\\] {
@@ -959,20 +943,8 @@ video {
   width: 100%;
 }
 
-.w-\[4rem\] {
-  width: 4rem;
-}
-
-.max-w-\[55rem\] {
-  max-width: 55rem;
-}
-
 .max-w-screen-md {
   max-width: 768px;
-}
-
-.max-w-\[20rem\] {
-  max-width: 20rem;
 }
 
 .flex-shrink {
@@ -1509,10 +1481,6 @@ video {
 
 .gap-2 {
   gap: 0.5rem;
-}
-
-.gap-4 {
-  gap: 1rem;
 }
 
 .space-x-2 > :not([hidden]) ~ :not([hidden]) {
@@ -2787,6 +2755,14 @@ video {
 }
 
 @media (min-width: 640px) {
+  .sm\:left-\[18\%\] {
+    left: 18%;
+  }
+
+  .sm\:top-\[7rem\] {
+    top: 7rem;
+  }
+
   .sm\:mt-10 {
     margin-top: 2.5rem;
   }
@@ -2795,32 +2771,8 @@ video {
     height: 19rem;
   }
 
-  .sm\:h-\[rem\] {
-    height: rem;
-  }
-
-  .sm\:h-\[6rem\] {
-    height: 6rem;
-  }
-
-  .sm\:h-\[1rem\] {
-    height: 1rem;
-  }
-
   .sm\:w-\[15rem\] {
     width: 15rem;
-  }
-
-  .sm\:w-\[1rem\] {
-    width: 1rem;
-  }
-
-  .sm\:w-\[4rem\] {
-    width: 4rem;
-  }
-
-  .sm\:max-w-\[55rem\] {
-    max-width: 55rem;
   }
 
   .sm\:flex-row {
