@@ -7,6 +7,9 @@
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./src/output.css">
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <style>
         @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
@@ -23,49 +26,105 @@
             background-color: #f0f0f0;
         }
 
-        .circle-element {
-            width: 200px;
-            height: 200px;
-            background-color: #3498db;
-            /* Set your desired background color */
-            clip-path: polygon(100% 50%, 100% 100%, 100% 100%, 0% 100%);
-            /* Creates a quarter-circle clipped area */
+        :root {
+            --large-size: 250px;
+            --small-size: 200px;
+        }
+
+
+        .quartercircle {
+            width: var(--size);
+            height: var(--size);
+            background: #9476F3;
+            opacity: 35%;
+            border-top-left-radius: var(--size);
+        }
+
+        .small-circle {
+            --size: var(--small-size);
+            position: absolute;
+            bottom: 50px;
+            left: 20px;
+        }
+
+        .rotate-circle {
+            transform: rotate(-96deg);
+        }
+
+        .threeQuarter {
+            width: 0;
+            height: 0;
+            border-right: var(--large-size) solid transparent;
+            border-top: var(--large-size) solid #FFFFFF24;
+            border-left: var(--large-size) solid #FFFFFF24;
+            border-bottom: var(--large-size) solid #FFFFFF24;
+            border-top-left-radius: var(--large-size);
+            border-top-right-radius: var(--large-size);
+            border-bottom-left-radius: var(--large-size);
+            border-bottom-right-radius: var(--large-size);
+            transform: rotate(-230deg);
+            position: absolute;
+
         }
     </style>
 </head>
 
-<body>
-
-    <div class="w-screen bg-gradient-to-b from-[#202427] to-[#121415]">
-        <div class="text-6xl font-bold text-white font-dm-sans mt-[12rem] ml-[10rem]">200+ million <br><span
-                class="text-[#18E97C]">content creators</span>
-        </div>
-        <p class="text-xl mt-4 text-white font-dm-sans ml-[10rem]">are contending for the same slice <br> of the market
-            on the net.</p>
-        <div class="relative flex justify-center items-center">
-            <div class="quarter-circle"></div>
-
-        </div>
-
-        <div class="flex justify-end mr-[20rem] mb-2">
-            <ul class="mt-8 text-white ">
-                <li class="flex items-center mt-2">
-                    <!-- <li class=""></li> -->
-                    <span class="ml-2 font-dm-sans text-white font-bold text-3xl">Multiple <br> Profiles</span>
-                </li>
-                <p class="ml-2">Creators have on average of 7-8 social <br> media profiles for various audiences.</p>
-                <li class="flex items-center mt-4">
-                    <span class="ml-2 font-dm-sans text-white font-bold text-3xl">Increased <br> Engagement</span>
-                </li>
-                <p class="ml-2">Creators want to divert their traffic <br> from social media to non-social links <br> for better engagement.</p>
-                <li class="flex items-center mt-4">
-                    <span class="ml-2 font-dm-sans text-white font-bold text-3xl">Diversifying <br> Content</span>
-                </li>
-                <p class="ml-2">Every 4th creator wants to diversify what <br> they make but feel pressure to keep <br> making what is rewarded by the algorithm.</p>
-            </ul>
+<body class="h-full bg-gradient-to-b from-[#202427] to-[#121415] text-white relative flex items-center justify-center">
+    <div>
+        <h1 class="text-5xl font-bold  sm:ml-[5rem] sm:mt-[15rem]">
+            <span class="text-white font-dm-sans text-7xl z-100 mt-10">200+ million</span> <br><span
+                class="text-[#18E97C] text-6xl">content creators</span>
+        </h1>
+        <p class="text-4xl mb-10 font-dm-sans sm:ml-[5rem] z-100">are contending for the same slice <br> of the market
+            on the net</p>
+        <div class="space-y-4 flex flex-col sm:ml-[40rem]">
+            <div class="flex items-center">
+                <div class="w-12 h-12 bg-purple-700 flex items-center justify-center rounded-lg mr-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-white" viewBox="0 0 20 20"
+                        fill="currentColor">
+                        <path fill-rule="evenodd"
+                            d="M10 3a1 1 0 00-.894.553l-3 6A1 1 0 006 10v5a1 1 0 001 1h6a1 1 0 001-1v-5a1 1 0 00-.106-.447l-3-6A1 1 0 0010 3zm-2.382 8l2.118-4.236L12.382 11H7.618z"
+                            clip-rule="evenodd" />
+                    </svg>
+                </div>
+                <div>
+                    <p class="font-bold font-dm-sans text-4xl">Multiple <br> Profiles</p>
+                    <p class="text-md font-dm-sans">Creators have an average of 7-8 social <br> media profiles for
+                        various audiences.</p>
+                </div>
+            </div>
+            <div class="flex items-center">
+                <div class="w-12 h-12 bg-purple-700 flex items-center justify-center rounded-lg mr-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-white" viewBox="0 0 20 20"
+                        fill="currentColor">
+                        <path
+                            d="M2 5a2 2 0 012-2h12a2 2 0 012 2v3h-2V5H4v10h8v2H4a2 2 0 01-2-2V5zm14 6v3h-2v-3h-3v-2h3V6h2v3h3v2h-3z" />
+                    </svg>
+                </div>
+                <div>
+                    <p class="font-bold font-dm-sans text-4xl">Increased <br> Engagement</p>
+                    <p class="text-md font-dm-sans">Creators want to divert their traffic <br> from social media to
+                        non-social links <br> for better engagement.</p>
+                </div>
+            </div>
+            <div class="flex items-center">
+                <div class="w-12 h-12 bg-purple-700 flex items-center justify-center rounded-lg mr-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-white" viewBox="0 0 20 20"
+                        fill="currentColor">
+                        <path
+                            d="M4 3a1 1 0 00-1 1v5.5a.5.5 0 01-1 0V4a2 2 0 012-2h3.5a.5.5 0 010 1H4zm12 12a1 1 0 001-1v-5.5a.5.5 0 011 0V14a2 2 0 01-2 2h-3.5a.5.5 0 010-1H16zM6.646 6.646a.5.5 0 10-.707-.708L2.5 9.377 3.5 10.5l3.146-3.854zm6.708 6.708a.5.5 0 01.707-.707l3.146 3.146 1-1-3.146-3.146a.5.5 0 01-.707.707l-3.146 3.146 1 1 3.146-3.146z" />
+                    </svg>
+                </div>
+                <div>
+                    <p class="font-bold font-dm-sans text-4xl">Diversifying <br> Content</p>
+                    <p class="text-md font-dm-sans">Every 4th creator wants to diversify what <br> they make but feel
+                        pressure to keep <br> making what is rewarded by the algorithm.</p>
+                </div>
+            </div>
         </div>
     </div>
-
+    <div class="threeQuarter mb-[36rem] ml-[20rem] "></div>
+    <div class="rotate-circle quartercircle small-circle ml-[30rem] mb-[10rem]"></div>
 </body>
 
 </html>
