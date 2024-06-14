@@ -23,25 +23,3 @@ window.addEventListener('scroll', handleScroll);
 handleScroll();
 
 
-document.addEventListener('DOMContentLoaded', () => {
-    const textElements = document.querySelectorAll('h1.hidden, p.hidden');
-    const listItems = document.querySelectorAll('.hidden-list');
-
-    const revealText = () => {
-        textElements.forEach((element) => {
-            element.classList.add('animate-text');
-        });
-    };
-
-    const revealListItems = () => {
-        listItems.forEach((item, index) => {
-            setTimeout(() => {
-                item.classList.add('animate-list');
-            }, index * 200); 
-        });
-    };
-
-    revealText();
-    revealListItems();
-});
-

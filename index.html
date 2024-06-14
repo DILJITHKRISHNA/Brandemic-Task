@@ -144,21 +144,37 @@
             opacity: 1;
             transform: translateY(0);
         }
+
+        @keyframes slideInFromLeft {
+            0% {
+                transform: translateX(-100%);
+                opacity: 0;
+            }
+            100% {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        .slide-in-left {
+            animation: slideInFromLeft 1.5s ease-out;
+        }
     </style>
 </head>
 
 <body>
-    <div class="animated-element relative text-center bg-[#010621] mb-30  text-white flex flex-col">
+    <div class=" relative text-center bg-[#010621] mb-30  text-white flex flex-col">
         <div class="flex flex-row">
-            <h1 class="text-6xl font-bold text-left px-10 py-10 font-dm-sans animate-pulse">A Brand With<br> Legacy</h1>
+            <h1 class="text-6xl font-bold text-left px-10 py-10 font-dm-sans animate-pulse slide-in-left">A Brand With<br> Legacy
+            </h1>
             <div class="backdrop-blur-md bg-gray-700/50 w-[40rem] h-8 mt-12 rounded-full items-center">
                 <header class="w-full">
                     <nav>
                         <ul
                             class="flex sm:flex-row flex-col justify-center gap-10 md:gap-20 font-semibold text-white font-dm-sans">
-                            <li><a href="index.html" class="hover:underline">Home</a></li>
-                            <li><a href="about.html" class="hover:underline">Overview</a></li>
-                            <li><a href="service.html" class="hover:underline">Service</a></li>
+                            <li><a href="index.html" class="hover:underline hover:text-[#010621]">Home</a></li>
+                            <li><a href="overview.html" class="hover:underline hover:text-[#010621]">Overview</a></li>
+                            <li><a href="service.html" class="hover:underline hover:text-[#010621]">Service</a></li>
                         </ul>
                     </nav>
                 </header>
@@ -169,14 +185,17 @@
             <img src="./assets/man.png" alt="chairman"
                 class="absolute z-50 sm:w-[15rem] sm:h-[19rem] w-[7rem] h-[8rem] left-[4%] sm:left-[18%] top-[21rem] sm:top-[7rem] rounded-2xl">
             <div
-            class="absolute z-40 text-left ml-20 bg-[#464BCD] px-[15rem] sm:mt-10 mt-[12rem] p-6 rounded-2xl sm:w-[55rem] w-auto">
-            <p class="font-semibold text-black text-lg font-dm-sans">Company Chairman Moti Sagar on his father Late
+                class="absolute z-40 text-left ml-20 bg-[#464BCD] px-[15rem] sm:mt-10 mt-[12rem] p-6 rounded-2xl sm:w-[55rem] w-auto">
+                <p class="font-semibold text-black text-lg font-dm-sans">Company Chairman Moti Sagar on his father
+                    Late
                     Shri Ramanand
                     Sagar.
                 </p>
-                <p class="mt-2 text-lg font-dm-sans">Sagar Picture's visionary legacy accredits itself to Mr. Ramanand
+                <p class="mt-2 text-lg font-dm-sans">Sagar Picture's visionary legacy accredits itself to Mr.
+                    Ramanand
                     Sagar,
-                    Classical Author, Writer, Film-maker, Producer, and Founder of Sagar Art Enterprises, one of India's
+                    Classical Author, Writer, Film-maker, Producer, and Founder of Sagar Art Enterprises, one of
+                    India's
                     earliest Motion Picture Company.</p>
                 <button class="learn-more mt-2">
                     <span class="circle" aria-hidden="true">
@@ -187,10 +206,10 @@
             </div>
         </div>
     </div>
-    <div class="bg-[#010621] w-[28rem] h-[22rem]">
-        <img src="./assets/Group.png" alt="Group" class="object-cover opacity-30 z-10">
+    <div class=" bg-[#010621] w-[28rem] h-[22rem]">
+        <img src="./assets/Group.png" alt="Group" class="object-cover opacity-30 ">
     </div>
-    <div class="bg-white py-16 px-4 animate-element">
+    <div class="bg-white py-16 px-4">
         <h2 class="text-3xl font-bold text-center text-[#030D42] mb-6 font-dm-sans">Now Playing On</h2>
         <p class="text-center max-w-screen-md mx-auto mb-10 text-[#030D42] font-dm-sans">
             Sagar Pictures Entertainment is the founder of one of Modern India's most successful content cycles,
