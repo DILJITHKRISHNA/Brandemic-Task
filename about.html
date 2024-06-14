@@ -38,6 +38,7 @@
             background: #9476F3;
             opacity: 35%;
             border-top-left-radius: var(--size);
+            transform: rotate(-98deg);
         }
 
         .small-circle {
@@ -45,10 +46,6 @@
             position: absolute;
             bottom: 50px;
             left: 20px;
-        }
-
-        .rotate-circle {
-            transform: rotate(-96deg);
         }
 
         .threeQuarter {
@@ -62,20 +59,22 @@
             border-top-right-radius: var(--large-size);
             border-bottom-left-radius: var(--large-size);
             border-bottom-right-radius: var(--large-size);
-            transform: rotate(-230deg);
+            transform: rotate(-235deg);
             position: absolute;
 
         }
+
     </style>
 </head>
 
 <body class="h-full bg-gradient-to-b from-[#202427] to-[#121415] text-white relative flex items-center justify-center">
-    <div>
-        <h1 class="text-5xl font-bold  sm:ml-[5rem] sm:mt-[15rem]">
-            <span class="text-white font-dm-sans text-7xl z-100 mt-10">200+ million</span> <br><span
+
+    <div class="mb-[5rem]">
+        <h1 class="text-5xl font-bold  sm:ml-[2rem] sm:mt-[10rem]">
+            <span class="text-white font-dm-sans text-7xl z-100">200+ million</span> <br><span
                 class="text-[#18E97C] text-6xl">content creators</span>
         </h1>
-        <p class="text-4xl mb-10 font-dm-sans sm:ml-[5rem] z-100">are contending for the same slice <br> of the market
+        <p class="text-4xl mb-10 font-dm-sans sm:ml-[2rem] z-100">are contending for the same slice <br> of the market
             on the net</p>
         <div class="space-y-4 flex flex-col sm:ml-[40rem]">
             <div class="flex items-center">
@@ -123,8 +122,8 @@
             </div>
         </div>
     </div>
-    <div class="threeQuarter mb-[36rem] ml-[20rem] "></div>
-    <div class="rotate-circle quartercircle small-circle ml-[30rem] mb-[10rem]"></div>
+    <div class="threeQuarter mb-[50rem] ml-[20rem] animate-pulse"></div>
+    <div class="quartercircle small-circle ml-[30rem] mb-[15rem] animate-pulse"></div>
 </body>
 
 </html>

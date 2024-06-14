@@ -687,6 +687,10 @@ video {
   isolation: auto;
 }
 
+.z-10 {
+  z-index: 10;
+}
+
 .z-40 {
   z-index: 40;
 }
@@ -760,16 +764,24 @@ video {
   margin-bottom: 1.5rem;
 }
 
-.mb-\[10rem\] {
-  margin-bottom: 10rem;
+.mb-\[15rem\] {
+  margin-bottom: 15rem;
 }
 
 .mb-\[50rem\] {
   margin-bottom: 50rem;
 }
 
+.mb-\[5rem\] {
+  margin-bottom: 5rem;
+}
+
 .ml-20 {
   margin-left: 5rem;
+}
+
+.ml-\[20rem\] {
+  margin-left: 20rem;
 }
 
 .ml-\[30rem\] {
@@ -788,10 +800,6 @@ video {
   margin-top: 0px;
 }
 
-.mt-10 {
-  margin-top: 2.5rem;
-}
-
 .mt-12 {
   margin-top: 3rem;
 }
@@ -806,30 +814,6 @@ video {
 
 .mt-\[12rem\] {
   margin-top: 12rem;
-}
-
-.mb-\[0rem\] {
-  margin-bottom: 0rem;
-}
-
-.mb-\[40rem\] {
-  margin-bottom: 40rem;
-}
-
-.mb-\[20rem\] {
-  margin-bottom: 20rem;
-}
-
-.mb-\[36rem\] {
-  margin-bottom: 36rem;
-}
-
-.ml-\[10rem\] {
-  margin-left: 10rem;
-}
-
-.ml-\[20rem\] {
-  margin-left: 20rem;
 }
 
 .box-border {
@@ -1543,8 +1527,8 @@ video {
   gap: 2.5rem;
 }
 
-.gap-2 {
-  gap: 0.5rem;
+.gap-4 {
+  gap: 1rem;
 }
 
 .space-x-2 > :not([hidden]) ~ :not([hidden]) {
@@ -2045,15 +2029,6 @@ video {
 }
 
 .bg-white {
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-
-.bg-\[\] {
-  background-color: ;
-}
-
-.bg-\[\#FFFFFF\] {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
@@ -2846,8 +2821,22 @@ video {
   }
 }
 
+.hover\:bg-\[\#010621\]:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(1 6 33 / var(--tw-bg-opacity));
+}
+
+.hover\:p-1:hover {
+  padding: 0.25rem;
+}
+
 .hover\:font-bold:hover {
   font-weight: 700;
+}
+
+.hover\:text-white:hover {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .hover\:underline:hover {
@@ -2881,12 +2870,12 @@ video {
     top: 7rem;
   }
 
-  .sm\:ml-\[40rem\] {
-    margin-left: 40rem;
+  .sm\:ml-\[2rem\] {
+    margin-left: 2rem;
   }
 
-  .sm\:ml-\[5rem\] {
-    margin-left: 5rem;
+  .sm\:ml-\[40rem\] {
+    margin-left: 40rem;
   }
 
   .sm\:mt-10 {
@@ -2895,14 +2884,6 @@ video {
 
   .sm\:mt-\[10rem\] {
     margin-top: 10rem;
-  }
-
-  .sm\:mt-\[1rem\] {
-    margin-top: 1rem;
-  }
-
-  .sm\:mt-\[15rem\] {
-    margin-top: 15rem;
   }
 
   .sm\:h-\[19rem\] {
