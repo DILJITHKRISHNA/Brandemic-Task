@@ -659,10 +659,6 @@ video {
   inset: -0.25rem;
 }
 
-.inset-0 {
-  inset: 0px;
-}
-
 .bottom-0 {
   bottom: 0px;
 }
@@ -671,8 +667,8 @@ video {
   inset-inline-end: 0.25rem;
 }
 
-.left-\[4\%\] {
-  left: 4%;
+.left-8 {
+  left: 2rem;
 }
 
 .right-0 {
@@ -689,14 +685,6 @@ video {
 
 .isolation-auto {
   isolation: auto;
-}
-
-.z-40 {
-  z-index: 40;
-}
-
-.z-50 {
-  z-index: 50;
 }
 
 .float-start {
@@ -786,10 +774,6 @@ video {
 
 .ml-\[30rem\] {
   margin-left: 30rem;
-}
-
-.ml-auto {
-  margin-left: auto;
 }
 
 .mr-4 {
@@ -931,16 +915,12 @@ video {
   height: 22rem;
 }
 
-.h-\[8rem\] {
-  height: 8rem;
+.h-\[49rem\] {
+  height: 49rem;
 }
 
 .h-full {
   height: 100%;
-}
-
-.h-screen {
-  height: 100vh;
 }
 
 .w-1\/4 {
@@ -989,6 +969,34 @@ video {
 
 .w-full {
   width: 100%;
+}
+
+.w-\[\] {
+  width: ;
+}
+
+.w-\[3\] {
+  width: 3;
+}
+
+.w-\[32\] {
+  width: 32;
+}
+
+.w-\[32re\] {
+  width: 32re;
+}
+
+.w-\[32rem\] {
+  width: 32rem;
+}
+
+.w-\[rem\] {
+  width: rem;
+}
+
+.w-\[70rem\] {
+  width: 70rem;
 }
 
 .max-w-screen-md {
@@ -2891,16 +2899,20 @@ video {
     margin-top: 10rem;
   }
 
-  .sm\:h-\[19rem\] {
-    height: 19rem;
+  .sm\:h-\[17rem\] {
+    height: 17rem;
   }
 
-  .sm\:w-\[15rem\] {
-    width: 15rem;
+  .sm\:w-\[13rem\] {
+    width: 13rem;
   }
 
   .sm\:w-\[55rem\] {
     width: 55rem;
+  }
+
+  .sm\:w-\[32rem\] {
+    width: 32rem;
   }
 
   .sm\:flex-row {
@@ -2929,8 +2941,72 @@ video {
     width: 80%;
   }
 
+  .md\:w-\[40rem\] {
+    width: 40rem;
+  }
+
+  .md\:w-\[80rem\] {
+    width: 80rem;
+  }
+
+  .md\:w-\[0rem\] {
+    width: 0rem;
+  }
+
+  .md\:w-\[20rem\] {
+    width: 20rem;
+  }
+
+  .md\:w-\[30rem\] {
+    width: 30rem;
+  }
+
+  .md\:w-\[3rem\] {
+    width: 3rem;
+  }
+
   .md\:w-\[35rem\] {
     width: 35rem;
+  }
+
+  .md\:w-\[33rem\] {
+    width: 33rem;
+  }
+
+  .md\:w-\[32rem\] {
+    width: 32rem;
+  }
+
+  .md\:w-\[34rem\] {
+    width: 34rem;
+  }
+
+  .md\:w-\[34\.rem\] {
+    width: 34.rem;
+  }
+
+  .md\:w-\[34\.2rem\] {
+    width: 34.2rem;
+  }
+
+  .md\:w-\[34\.8rem\] {
+    width: 34.8rem;
+  }
+
+  .md\:w-\[38rem\] {
+    width: 38rem;
+  }
+
+  .md\:w-\[rem\] {
+    width: rem;
+  }
+
+  .md\:w-\[50rem\] {
+    width: 50rem;
+  }
+
+  .md\:w-\[5rem\] {
+    width: 5rem;
   }
 
   .md\:flex-row {
