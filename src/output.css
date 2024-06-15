@@ -907,12 +907,20 @@ video {
   height: 22rem;
 }
 
-.h-\[40rem\] {
-  height: 40rem;
+.h-\[46rem\] {
+  height: 46rem;
 }
 
 .h-full {
   height: 100%;
+}
+
+.h-\[4rem\] {
+  height: 4rem;
+}
+
+.h-\[48rem\] {
+  height: 48rem;
 }
 
 .w-1\/4 {
