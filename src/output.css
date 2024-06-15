@@ -667,8 +667,8 @@ video {
   inset-inline-end: 0.25rem;
 }
 
-.left-8 {
-  left: 2rem;
+.left-1 {
+  left: 0.25rem;
 }
 
 .right-0 {
@@ -764,8 +764,8 @@ video {
   margin-bottom: 5rem;
 }
 
-.ml-20 {
-  margin-left: 5rem;
+.ml-28 {
+  margin-left: 7rem;
 }
 
 .ml-\[20rem\] {
@@ -947,8 +947,8 @@ video {
   width: 40rem;
 }
 
-.w-\[7rem\] {
-  width: 7rem;
+.w-\[8rem\] {
+  width: 8rem;
 }
 
 .w-\[this-is\\\\\] {
@@ -2150,9 +2150,9 @@ video {
   padding-right: 1rem;
 }
 
-.px-\[15rem\] {
-  padding-left: 15rem;
-  padding-right: 15rem;
+.px-\[12rem\] {
+  padding-left: 12rem;
+  padding-right: 12rem;
 }
 
 .py-10 {
@@ -2850,6 +2850,10 @@ video {
     top: 7rem;
   }
 
+  .sm\:ml-52 {
+    margin-left: 13rem;
+  }
+
   .sm\:ml-\[2rem\] {
     margin-left: 2rem;
   }
@@ -2864,6 +2868,22 @@ video {
 
   .sm\:mt-\[10rem\] {
     margin-top: 10rem;
+  }
+
+  .sm\:ml-5 {
+    margin-left: 1.25rem;
+  }
+
+  .sm\:ml-2 {
+    margin-left: 0.5rem;
+  }
+
+  .sm\:ml-4 {
+    margin-left: 1rem;
+  }
+
+  .sm\:ml-44 {
+    margin-left: 11rem;
   }
 
   .sm\:h-\[17rem\] {
@@ -2882,11 +2902,6 @@ video {
     flex-direction: row;
   }
 
-  .sm\:text-4xl {
-    font-size: 2.25rem;
-    line-height: 2.5rem;
-  }
-
   .sm\:underline {
     text-decoration-line: underline;
   }
@@ -2895,6 +2910,38 @@ video {
 @media (min-width: 768px) {
   .md\:mt-\[10rem\] {
     margin-top: 10rem;
+  }
+
+  .md\:ml-3 {
+    margin-left: 0.75rem;
+  }
+
+  .md\:ml-32 {
+    margin-left: 8rem;
+  }
+
+  .md\:ml-4 {
+    margin-left: 1rem;
+  }
+
+  .md\:ml-44 {
+    margin-left: 11rem;
+  }
+
+  .md\:ml-5 {
+    margin-left: 1.25rem;
+  }
+
+  .md\:ml-56 {
+    margin-left: 14rem;
+  }
+
+  .md\:ml-52 {
+    margin-left: 13rem;
+  }
+
+  .md\:ml-48 {
+    margin-left: 12rem;
   }
 
   .md\:h-4\/5 {
@@ -2915,6 +2962,30 @@ video {
 
   .md\:w-\[35rem\] {
     width: 35rem;
+  }
+
+  .md\:w-\[\] {
+    width: ;
+  }
+
+  .md\:w-\[5\] {
+    width: 5;
+  }
+
+  .md\:w-\[52\] {
+    width: 52;
+  }
+
+  .md\:w-\[52rem\] {
+    width: 52rem;
+  }
+
+  .md\:w-\[5rem\] {
+    width: 5rem;
+  }
+
+  .md\:w-\[55rem\] {
+    width: 55rem;
   }
 
   .md\:flex-row {
@@ -2942,9 +3013,9 @@ video {
     line-height: 2.25rem;
   }
 
-  .md\:text-6xl {
-    font-size: 3.75rem;
-    line-height: 1;
+  .md\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
   }
 }
 
